@@ -71,6 +71,7 @@
   };
 
   articleView.initIndexPage = () => {
+    console.log('init console log');
     $('#ajax-spinner').fadeOut();
     $('#filters').fadeIn();
     Article.all.forEach(article => {
@@ -90,6 +91,6 @@
     articleView.setTeasers();
   };
 
-  Article.fetchAll(articleView.initIndexPage);
+  // Article.fetchAll(articleView.initIndexPage);
   module.articleView = articleView;
 })(window);

@@ -6,7 +6,7 @@
     // TODO: Define a function that hides all main section elements, and then reveals just the #about section:
   aboutController.init = function() {
     console.log('Helloooo we are inside of aboutController');
-    $('main').hide();
+    $('#articles').hide();
     $('#about').show();
   };
 
